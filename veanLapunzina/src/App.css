@@ -39,7 +39,7 @@
 .nav-link:hover {
   background-color: rgba(10, 255, 121, 0.473);
   transition: .5s;
-  text-decoration: underline 3px white;
+  text-decoration: underline 5px white;
 }
 
 .logo {
