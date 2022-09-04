@@ -1,4 +1,3 @@
-# Javascript
-Curso de Javascript - Coderhouse
+# React
+Curso de React - Coderhouse
 
-Primer desafío - utilización de IF - While, operaciones, constantes y variables.
