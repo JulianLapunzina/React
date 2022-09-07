@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemCount from './components/ItemCount/ItemCount';
+
 
 function App() {
   return (
@@ -18,8 +20,15 @@ function App() {
       <hr className='raya'></hr>
       <ItemListContainer greeting={'Hola, bienvenidx a Vean'}/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-        <a href="../public/index.html"></a>
+        <main>
+          <section>
+            <ItemCount/>
+          </section>
+          <section>
+            <img src={logo} className="App-logo" alt="logo"/>
+            <a href="../public/index.html"></a>
+          </section>
+        </main>
       </header>
       </div> 
       );
