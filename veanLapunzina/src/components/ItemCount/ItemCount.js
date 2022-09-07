@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
-import { useEffect } from "react";
-
 
 
 const ItemCount = ({stock}) => {
@@ -11,18 +9,6 @@ const ItemCount = ({stock}) => {
     const suma = () => initialState <= stock -1 ? setInitialState(initialState + 1) : Swal.fire({title: 'Se alcanzó el máximo de items disponibles'})
     
     const resta = () => initialState > 0 ? setInitialState(initialState - 1) : Swal.fire('Agregue un producto al carrito para continuar')
-
-// FALTA RESOLVER COMO RECIBE NUMERO Y STOCK LA FUNCION DE VALIDACION
-
-
-    // const validacion = (numero, stock) => {
-    //     if (numero < 0){console.log(err)}
-    //     validacion < 0 ? console.log(error): + 1 
-
-    //     (numero > stock) 
-    //         removeEventListener('btn-count')
-    //     }
-    // }
 
     const addCart = () => {
         Swal.fire({title: 'Agregaste x producto al carrito',
