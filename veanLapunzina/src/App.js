@@ -6,6 +6,8 @@ import ItemCount from './components/ItemCount/ItemCount';
 
 
 function App() {
+  const stock = 5
+  const books = [0,1,2,3,4,5];
   return (
     <div className="App">
       <button className='btn-login'>LOGIN</button>
@@ -22,7 +24,7 @@ function App() {
       <header className="App-header">
         <main>
           <section>
-            <ItemCount/>
+            <ItemCount stock={stock}/>
           </section>
           <section>
             <img src={logo} className="App-logo" alt="logo"/>
