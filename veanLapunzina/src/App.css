@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
   align-items: center;
@@ -94,8 +95,7 @@
 }
 
 h2 {
-  color: white
-}
+color: black;}
 
 .counterDiv {
   height: 100%;
@@ -115,6 +115,13 @@ h2 {
 .raya {
   padding: 0px;
   border-color: rgba(10, 255, 121, 0.473);
+}
+
+
+/* ITEM LIST STYLES */
+
+.Item-div {
+  height: 30vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
