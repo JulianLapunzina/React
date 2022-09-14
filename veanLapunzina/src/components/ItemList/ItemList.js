@@ -8,7 +8,8 @@ const ItemList = ({list}) => {
                 <Item 
                 title={book.title}
                 price={book.price}
-                img= {book.img}
+                img={book.img}
+                author={book.author}
                 />
             </div>
             ))

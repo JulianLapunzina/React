@@ -3,11 +3,11 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemCount from './components/ItemCount/ItemCount';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
-  const stock = 5
-  const books = [0,1,2,3,4,5];
+  const stock = 5;
   return (
     <div className="App">
       <button className='btn-login'>LOGIN</button>
@@ -20,7 +20,6 @@ function App() {
       </ul>
       <NavBar/>
       <hr className='raya'></hr>
-      <ItemListContainer greeting={'Hola, bienvenidx a Vean'}/>
       <header className="App-header">
         <main>
           <section>
@@ -32,7 +31,13 @@ function App() {
           </section>
         </main>
       </header>
-      </div> 
+      <section className='book-section'>
+          <ItemListContainer/>
+      </section>
+      <section>
+        <ItemDetailContainer/>
+      </section>
+    </div> 
       );
 }
 

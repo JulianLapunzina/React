@@ -1,17 +1,19 @@
-import img from "../../images/Vean-logo.png"
+import img from "../Vean-logo.png"
 import CartWidget from "../CartWidget/CartWidget";
 
-const showCart = () => {
+// const showCart = () => {
     
-}
+// }
 
 const NavBar = () => {
     return (
         <div className="header-div">
             <img src={img} className="logo"></img>            
-            <CartWidget showCart={() => {}}/>
+            <CartWidget/>
         </div>
     )
 }
 
 export default NavBar;
+
+//showCart={() => {}}

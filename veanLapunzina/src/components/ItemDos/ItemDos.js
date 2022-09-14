@@ -1,5 +1,4 @@
-const Item = ({title, price, img, author}) => {
-    console.log(img)
+const ItemDos = ({title, price, img, author}) => {
     return (
         <div className="Item-div">
             <img src={img} alt='error'/>
@@ -9,4 +8,4 @@ const Item = ({title, price, img, author}) => {
         </div>
     )
 }
-export default Item;
+export default ItemDos;
