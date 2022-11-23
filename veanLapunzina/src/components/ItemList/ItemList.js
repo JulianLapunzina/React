@@ -10,6 +10,7 @@ const ItemList = ({list}) => {
                 price={book.price}
                 img={book.img}
                 author={book.author}
+                stock={book.stock}
                 />
             </div>
             ))

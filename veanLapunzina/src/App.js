@@ -30,11 +30,12 @@ function App() {
           </section>
         </main>
       </header>
-      <section className='book-section'>
+      <section className='bookSection'>
           <ItemListContainer/>
       </section>
-    </div> 
-      );
+    </div>
+);
+
 }
 
 export default App;

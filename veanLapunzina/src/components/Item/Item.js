@@ -1,4 +1,4 @@
-const Item = ({title, price, img, author}) => {
+const Item = ({title, price, img, author, stock}) => {
     console.log(img)
     return (
         <>
@@ -7,6 +7,7 @@ const Item = ({title, price, img, author}) => {
             <h2 className="subtitle">"{title}"</h2>
             <h3 className="treetitle">${price}</h3>
             <h3 className="treetitle">Autor: "{author}"</h3>
+            <p className="treetitle">Stock: {stock} </p>
             <button className="btnCard">Comprar</button>
         </div>
         </>

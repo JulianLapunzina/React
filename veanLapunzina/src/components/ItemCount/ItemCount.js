@@ -16,7 +16,7 @@ const ItemCount = ({stock}) => {
     return (
         <>
         <div className="counterDiv">
-            <h2 style={{color: 'white'}}>Samsung</h2>
+            <h2 style={{color: 'white'}}>Books</h2>
             <p className="counter-P">Total: {initialState}</p>
             <p className="counter-P">Stock Disponible: {stock}</p>
             <button onClick={suma} className='btn-count'>
