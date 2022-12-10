@@ -1,6 +1,6 @@
 import data from "../Data"
 import { useEffect } from "react";
-
+import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetail = () => {
 
@@ -23,8 +23,8 @@ getFetch.then((response => {
                 <h1> ESTE ES UN SOLO OBJETO. PODRÍA TRAER CUALQUIERA DE LOS 3</h1>
                 <img className='img' src={item.img} alt='error'/>     
                 <h2 className='subtitle'>{item.title}</h2>
-                {item.stock}
-                {item.price}        
+                {item.price}
+                <ItemCount stock={item.stock}/>        
             </div>
             )
         }, 2500)
