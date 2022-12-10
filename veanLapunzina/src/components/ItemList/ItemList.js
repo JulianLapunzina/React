@@ -1,5 +1,4 @@
 import Item from "../Item/Item";
-import ItemDetail from '../ItemDetail/ItemDetail'
 
 const ItemList = ({list}) => {
     return (
@@ -17,9 +16,6 @@ const ItemList = ({list}) => {
         </div>
         ))
         }
-        </div>
-        <div>
-        <ItemDetail list={list}/>
         </div>
     </>
     )

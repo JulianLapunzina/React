@@ -144,6 +144,11 @@ color: black;}
 
 }
 
+.itemDetail {
+  width: calc(100/3);
+  border-color: aquamarine 2px;
+}
+
 .treetitle {
 font-size: 18px;
 

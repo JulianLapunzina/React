@@ -1,5 +1,5 @@
 import img from "../Vean-logo.png"
-import CartWidget from "../CartWidget/CartWidget";
+import cart from '../cart.svg';
 
 
 const NavBar = () => {
@@ -16,9 +16,10 @@ const NavBar = () => {
         </ul>
         <div className="header-div">
             <img src={img} className="logo" alt="sarasa"/>           
-            <CartWidget/>
+            <button className='btn-cart'><img src={cart} className="cart"/></button>
         </div>
         </div>
+        <hr className='raya'></hr>
         </>
     )
 }

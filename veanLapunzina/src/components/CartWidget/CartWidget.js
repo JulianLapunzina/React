@@ -1,9 +1,7 @@
-import cart from './cart.svg';
-
 const CartWidget = () => {
     return (
         <div className='cart-div'>
-            <button className='btn-cart'><img src={cart} className="cart"></img></button>
+            <h1 style={{fontSize:"24px", textAlign: "center"}}>Cart-Container</h1>
         </div>
     )
 }

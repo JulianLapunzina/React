@@ -1,5 +1,4 @@
 const Item = ({title, price, img, author, stock}) => {
-    console.log(img)
     return (
         <>
         <div className="item-div">

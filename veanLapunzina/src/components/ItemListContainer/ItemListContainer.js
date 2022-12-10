@@ -17,7 +17,9 @@ const ItemListContainer = () => {
         })
 
     return(
+        <section className='bookSection'>
         <ItemList list={bookList}/>
+        </section>
     )
 }
 
