@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Header from './components/Header/Header';
+// import Header from './components/Header/Header';
 import ItemDetail from './components/ItemDetail/ItemDetail';
 import CartWidget from './components/CartWidget/CartWidget'
 
@@ -16,7 +16,7 @@ function App() {
       {/* <Header/> */}
         <Routes>
           <Route path='/' element={<ItemListContainer/>}/>
-          <Route path='/detalle' element={<ItemDetail/>}/>
+          <Route path='/detail' element={<ItemDetail/>}/>
           <Route path='/cart' element={<CartWidget/>}/>
         </Routes>
     </BrowserRouter>

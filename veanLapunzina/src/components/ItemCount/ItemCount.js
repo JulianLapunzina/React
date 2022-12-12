@@ -5,7 +5,6 @@ import Swal from "sweetalert2";
 const ItemCount = ({stock}) => {
     const [initialState, setInitialState] = useState(0);
 
-
     const suma = () => initialState <= stock -1 ? setInitialState(initialState + 1) : Swal.fire({title: 'Se alcanzó el máximo de items disponibles'})
     
     const resta = () => initialState > 0 ? setInitialState(initialState - 1) : Swal.fire('Agregue un producto al carrito para continuar')

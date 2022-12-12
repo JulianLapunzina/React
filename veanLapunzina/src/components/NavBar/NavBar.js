@@ -16,7 +16,7 @@ const NavBar = () => {
         </ul>
         <div className="header-div">
             <img src={img} className="logo" alt="sarasa"/>           
-            <button className='btn-cart'><img src={cart} className="cart"/></button>
+            <button className='btn-cart'><img src={cart} className="cart" alt="sarasa"/></button>
         </div>
         </div>
         <hr className='raya'></hr>

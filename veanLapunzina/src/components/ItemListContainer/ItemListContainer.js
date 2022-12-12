@@ -9,28 +9,33 @@ import ItemList from "../ItemList/ItemList";
             setTimeout(()=>{
                 res(data);
                 rej('allá le están trayendo los datos');
-            }, 500); 
+            }, 1500); 
         })
-    } 
+    }
 //Componente ItemListContainer
 
-const ItemListContainer = () => {
+function ItemListContainer() {
 
-const [bookList, setBookList] = useState ([])
+    const [bookList, setBookList] = useState([]);
+    const [loading, setLoading] = useState(true)
 
-useEffect(()=> {
-getBooks()
-.then((response)=>{
-setBookList(response)
-})
-.catch(err => console.log(err))
-}, []);   
+    useEffect(() => {
+        getBooks()
+            .then((response) => {
+                setBookList(response);
+            })
+            .catch(err => console.log(err))
+            .finally(()=> setLoading(false));
+    }, []);
 
-return(
-        <section className='bookSection'>
+    return (
+    <>
+    {loading ? <h2>loading...</h2> :        
+    <section className='bookSection'>
         <ItemList list={bookList}/>
-        </section>
-    )
-};
+    </section>}
+    </>
+    );
+}
 
 export default ItemListContainer;
