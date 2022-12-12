@@ -9,9 +9,9 @@ const NavBar = () => {
         <button className='btn-login'>LOGIN</button>
         <ul className='nav'>
         <li className='nav-list'>
-            <a className='nav-link' href='../public/index.html'>Home</a>
-            <a className='nav-link' href='../public/index.html'>Catálogo</a>
-            <a className='nav-link' href='../public/index.html'>Inscripción</a>
+            <a className='nav-link' href='/'>Home</a>
+            <a className='nav-link' href='/'>Catálogo</a>
+            <a className='nav-link' href='/'>Inscripción</a>
         </li>
         </ul>
         <div className="header-div">

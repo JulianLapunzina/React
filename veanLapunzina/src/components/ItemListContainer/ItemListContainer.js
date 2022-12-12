@@ -2,26 +2,31 @@ import data from "../Data"
 import { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
 
-const ItemListContainer = () => {
-    const [bookList, setBookList] = useState ([])
+//Promesa a Json
 
-    const getBooks = new Promise ((resolve,reject) => {
+    const getBooks = new Promise ((res, rej) => {
         setTimeout(()=>{
-            resolve(data);
-        }, 2000);
+            res(data);
+            rej('allá le están trayendo los datos');
+        }, 500); 
     })
 
-    useEffect(()=> {
-        getBooks
-        .then((response)=>{setBookList(response)})
-    }, []);
+//Componente ItemListContainer
 
+const ItemListContainer = () => {
 
-    return(
+const [bookList, setBookList] = useState ([])
+
+useEffect(()=> {
+    getBooks
+    .then((response)=>{setBookList(response)})
+}, []);
+
+return(
         <section className='bookSection'>
         <ItemList list={bookList}/>
         </section>
     )
-}
+};
 
 export default ItemListContainer;
