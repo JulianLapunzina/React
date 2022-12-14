@@ -15,8 +15,8 @@ const NavBar = () => {
         </li>
         </ul>
         <div className="header-div">
-            <img src={img} className="logo" alt="sarasa"/>           
-            <button className='btn-cart'><img src={cart} className="cart" alt="sarasa"/></button>
+            <a href="/"><img src={img} className="logo" alt="sarasa"/></a>          
+            <button className='btn-cart'><a href="/cart"><img src={cart} className="cart" alt="sarasa"/></a></button>
         </div>
         </div>
         <hr className='raya'></hr>
