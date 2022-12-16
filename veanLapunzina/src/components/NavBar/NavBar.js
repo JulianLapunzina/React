@@ -1,5 +1,6 @@
 import img from "../Vean-logo.png"
 import cart from '../cart.svg';
+import { Link } from "react-router-dom";
 
 
 const NavBar = () => {
@@ -9,14 +10,14 @@ const NavBar = () => {
         <button className='btn-login'>LOGIN</button>
         <ul className='nav'>
         <li className='nav-list'>
-            <a className='nav-link' href='/'>Home</a>
-            <a className='nav-link' href='/'>Catálogo</a>
-            <a className='nav-link' href='/'>Inscripción</a>
+            <Link to={'/'} className='nav-link' href='/'>Home</Link>
+            <Link to={'/'} className='nav-link' href='/'>Catálogo</Link>
+            <Link to={'/'}className='nav-link' href='/'>Inscripción</Link>
         </li>
         </ul>
         <div className="header-div">
-            <a href="/"><img src={img} className="logo" alt="sarasa"/></a>          
-            <button className='btn-cart'><a href="/cart"><img src={cart} className="cart" alt="sarasa"/></a></button>
+            <Link to={'/'}><img src={img} className="logo" alt="sarasa"/></Link>          
+            <Link to={'/cart'} className='btn-cart'><img src={cart} className="cart" alt="sarasa"/></Link>
         </div>
         </div>
         <hr className='raya'></hr>
