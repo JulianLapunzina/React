@@ -15,7 +15,7 @@ const ItemCount = ({stock}) => {
     return (
         <>
             <p className="counter-P">Total: {initialState}</p>
-            <p className="counter-P">Stock Disponible: {stock}</p>
+            <p className="counter-P">Stock Disponible:{stock}</p>
             <button onClick={suma} className='btn-count'>
                 +
             </button>

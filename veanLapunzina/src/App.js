@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -16,8 +16,9 @@ function App() {
       {/* <Header/> */}
         <Routes>
           <Route path='/' element={<ItemListContainer/>}/>
-          <Route path='/detail' element={<ItemDetail/>}/>
+          <Route path='/detail/:productId' element={<ItemDetail/>}/>
           <Route path='/cart' element={<CartWidget/>}/>
+          <Route path='*' element={<Navigate to='/'/>}/>
         </Routes>
     </BrowserRouter>
 );

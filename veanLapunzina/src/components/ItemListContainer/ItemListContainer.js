@@ -1,17 +1,7 @@
-import data from "../Data"
 import { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
+import getBooks from "../GetBooks/getBooks";
 
-//Promesa a Json
-
-    const getBooks = ()=> {
-        return new Promise ((res, rej) => {
-            setTimeout(()=>{
-                res(data);
-                rej('allá le están trayendo los datos');
-            }, 1500); 
-        })
-    }
 //Componente ItemListContainer
 
 function ItemListContainer() {
