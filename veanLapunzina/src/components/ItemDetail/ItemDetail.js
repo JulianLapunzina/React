@@ -8,14 +8,14 @@ const ItemDetail = () => {
 const [product, setProduct] = useState([])
 const {productId} = useParams()
 
-
 useEffect(()=> {
     getBooks()
-    .then(respProd => setProduct(respProd.find(prod => prod.id === productId)))
+    .then(respProd => setProduct(respProd.find(prod => prod.id === parseInt(productId))))
     .catch(err=>console.log(err))
 }, [])
 
 console.log(setProduct)
+
 return (
     <div className='itemDetail'>
         <h1> {product.title}</h1>
