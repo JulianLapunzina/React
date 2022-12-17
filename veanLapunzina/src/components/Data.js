@@ -1,6 +1,7 @@
 const data = [
     {
         id: 1,
+        category: 'poesia',
         title: 'El oficio de mentir',
         price: 2500,
         author: 'Juan Báez Nudelman',
@@ -9,6 +10,7 @@ const data = [
     },
     {
         id: 2,
+        category: 'cuentos',
         title: 'Tan cerca, tan cerca',
         price: 2500,
         author: 'Ariel Duce Bémez',
@@ -18,6 +20,7 @@ const data = [
     },
     {
         id: 3,
+        category: 'poesia',
         title: 'Rocas Igneas',
         price: 2500,        
         author: 'Sebastian Báez',
@@ -25,5 +28,5 @@ const data = [
         stock: 5
     }
 ]
-
+ 
 export default data;

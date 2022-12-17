@@ -10,9 +10,10 @@ const NavBar = () => {
         <button className='btn-login'>LOGIN</button>
         <ul className='nav'>
         <li className='nav-list'>
-            <NavLink to={'/'} className='nav-link' href='/'>Home</NavLink>
-            <NavLink to={'/'} className='nav-link' href='/'>Catálogo</NavLink>
-            <NavLink to={'/'}className='nav-link' href='/'>Inscripción</NavLink>
+            <NavLink to={'/'} className='nav-link'>Home</NavLink>
+            <NavLink to={'/category/poesia'} className='nav-link'>Poesía</NavLink>
+            <NavLink to={'/category/cuentos'} className='nav-link'>Cuentos</NavLink>
+            <NavLink to={'/inscripcion'}className='nav-link'>Inscripción</NavLink>
         </li>
         </ul>
         <div className="header-div">

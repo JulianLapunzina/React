@@ -5,6 +5,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 // import Header from './components/Header/Header';
 import ItemDetail from './components/ItemDetail/ItemDetail';
 import CartWidget from './components/CartWidget/CartWidget'
+import Inscripcion from './components/Inscripcion/Inscripcion';
 
 import './App.css';
 
@@ -16,7 +17,9 @@ function App() {
       {/* <Header/> */}
         <Routes>
           <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
           <Route path='/detail/:productId' element={<ItemDetail/>}/>
+          <Route path='/inscripcion' element={<Inscripcion/>}/>
           <Route path='/cart' element={<CartWidget/>}/>
           <Route path='*' element={<Navigate to='/'/>}/>
         </Routes>
